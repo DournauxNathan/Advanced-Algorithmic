@@ -1,8 +1,21 @@
-D'accord ! Voici le format que tu souhaites pour chaque algorithme, en respectant exactement la structure demandée :
-
-```markdown
 ## Algorithmes
 
+Cette section présente une série d'algorithmes utilisés pour manipuler des tableaux d'entiers en C. Chaque algorithme est expliqué en détail, accompagné de son code source et d'une description de son fonctionnement, de ses entrées et sorties, ainsi que de sa complexité temporelle.
+
+Les algorithmes inclus dans cette section permettent de réaliser diverses opérations sur les tableaux, telles que l'affichage, l'insertion et la suppression d'éléments, ainsi que l'inversion de l'ordre des éléments.
+
+Chaque algorithme est accompagné d'exemples d'utilisation et d'une analyse de sa performance pour fournir une compréhension complète de son fonctionnement et de son efficacité dans différents scénarios.
+
+Les algorithmes suivants sont inclus :
+
+1. **Display - Afficher un tableau** : Affiche les éléments d'un tableau d'entiers.
+2. **Erase - Supprimer un élément du tableau** : Supprime un élément d'un tableau à une position spécifiée.
+3. **Insert - Insérer un élément dans le tableau** : Insère un élément à une position donnée dans le tableau.
+4. **Invert - Inverser un tableau** : Inverse l'ordre des éléments dans un tableau.
+
+Ces algorithmes peuvent être utilisés pour des tâches de manipulation de tableaux dans divers contextes et sont essentiels pour comprendre les bases de la gestion de données en mémoire.
+
+---
 ### 1. Display - Afficher un tableau
 ```c
 void display(int* tab, int taille)
@@ -11,7 +24,7 @@ void display(int* tab, int taille)
         printf("%d ", tab[i]);
     }
 }
-
+```
 - **But de l'algorithme** : Afficher les éléments d'un tableau d'entiers.
 - **Entrée** :
   - `tab` : Tableau d'entiers.
@@ -19,9 +32,7 @@ void display(int* tab, int taille)
 - **Sortie** : Aucun retour, affiche les éléments du tableau dans la console.
 - **Complexité temporelle** : O(n), où n est la taille du tableau.
 - **Description** : Cette fonction parcourt un tableau d'entiers et affiche chaque élément séparé par un espace.
-
 ---
-
 ### 2. Erase - Supprimer un élément du tableau
 ```c
 void erase(int *tab, int N, int position)
@@ -39,9 +50,7 @@ void erase(int *tab, int N, int position)
 - **Sortie** : Aucun retour, le tableau est modifié directement.
 - **Complexité temporelle** : O(n), où n est la taille du tableau.
 - **Description** : Cette fonction supprime l'élément à la position spécifiée dans le tableau, puis décale tous les éléments suivants d'une position vers la gauche pour combler l'espace vide.
-
 ---
-
 ### 3. Insert - Insérer un élément dans le tableau
 ```c
 void insert(int *tab, int N, int position, int value)
@@ -62,9 +71,7 @@ void insert(int *tab, int N, int position, int value)
 - **Sortie** : Aucun retour, le tableau est modifié directement.
 - **Complexité temporelle** : O(n), où n est la taille du tableau.
 - **Description** : Cette fonction insère une nouvelle valeur à la position spécifiée dans le tableau en décalant les éléments suivants d'une position vers la droite.
-
 ---
-
 ### 4. Invert - Inverser un tableau
 ```c
 void invert(int *array, int N)
@@ -86,9 +93,3 @@ void invert(int *array, int N)
 - **Sortie** : Aucun retour, le tableau est modifié directement.
 - **Complexité temporelle** : O(n), où n est la taille du tableau.
 - **Description** : Cette fonction inverse les éléments du tableau en échappant les valeurs aux positions opposées jusqu'à la moitié du tableau.
-
----
-
-```
-
-Ce format est maintenant exactement comme tu l'as demandé, avec le code en C suivi de la documentation de l'algorithme.
