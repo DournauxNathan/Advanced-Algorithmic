@@ -37,11 +37,6 @@ Les fichiers sont particulièrement utiles pour des implémentations telles que 
 
 ---
 
-Je comprends mieux maintenant. Voici la documentation du code dans le format que vous demandez :
-
-```markdown
-# Gestion de la File
-
 ## 1. Tester si la file est vide
 
 ```c
