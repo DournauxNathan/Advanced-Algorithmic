@@ -53,6 +53,3 @@ Le **tri par tas** (Heap Sort) trie les éléments en construisant un tas à par
 
 ## Application de la Pile : Calculette
 Une **calculette** est implémentée en utilisant une pile pour évaluer des expressions arithmétiques simples (addition, soustraction, multiplication). Elle parcourt la chaîne de caractères représentant l'expression et applique les opérations sur les éléments empilés.
-
-## Licence
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus de détails.
