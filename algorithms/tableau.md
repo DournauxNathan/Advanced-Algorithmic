@@ -11,7 +11,7 @@ void display(int* tab, int taille)
         printf("%d ", tab[i]);
     }
 }
-```
+
 - **But de l'algorithme** : Afficher les éléments d'un tableau d'entiers.
 - **Entrée** :
   - `tab` : Tableau d'entiers.
