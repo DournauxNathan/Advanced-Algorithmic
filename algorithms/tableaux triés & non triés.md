@@ -1,4 +1,3 @@
-```markdown
 ## Algorithmes de Manipulation de Tableaux
 
 Cette section contient plusieurs algorithmes permettant de manipuler des tableaux d'entiers dans différentes situations. Les algorithmes abordent des opérations classiques sur des tableaux, telles que la recherche de valeurs spécifiques, la comparaison entre tableaux, et la fusion de tableaux triés.
@@ -14,7 +13,6 @@ Cette section contient plusieurs algorithmes permettant de manipuler des tableau
 4. **Fusion de tableaux triés** : Cet algorithme fusionne deux tableaux déjà triés en un seul tableau trié, garantissant ainsi un temps d'exécution optimal en utilisant une approche de type "fusion" de l'algorithme de tri fusion.
 
 Chaque algorithme est présenté avec son code source en C, accompagné d'une description détaillée de son but, des entrées et sorties, ainsi que de la complexité temporelle associée. L'objectif est de rendre ces algorithmes réutilisables pour la manipulation efficace des tableaux dans divers contextes.
-
 
 ---
 
