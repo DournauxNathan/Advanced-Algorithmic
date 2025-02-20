@@ -83,5 +83,3 @@ Array merge(Array a, Array b)
 - **Sortie** : Un tableau trié fusionné à partir des deux tableaux d'entrée.
 - **Complexité temporelle** : O(n), où n est la somme des tailles des deux tableaux `a` et `b`.
 - **Description** : Cette fonction fusionne deux sous-tableaux triés (`a` et `b`) en un seul tableau trié. Elle parcourt les deux tableaux simultanément et place les éléments dans le bon ordre dans le nouveau tableau `newTab`. Si l'un des tableaux est encore partiellement traversé après la fusion des éléments communs, les éléments restants sont copiés directement dans `newTab`.
-
-```
