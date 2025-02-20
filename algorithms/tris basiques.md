@@ -13,14 +13,6 @@ Cette section présente des algorithmes classiques de tri, souvent utilisés com
 Ces algorithmes sont décrits avec leur implémentation en C, leur complexité temporelle, ainsi qu’une explication de leur fonctionnement pour comprendre les différences et les performances associées à chaque méthode.
 
 ---
-
-Voici la partie documentée en format Markdown pour tes algorithmes de tri :
-
-```markdown
-## Algorithmes de Tri
-
-Cette section décrit des algorithmes de tri de base utilisés pour organiser les éléments d'un tableau dans un ordre croissant ou décroissant. Chaque algorithme est présenté avec son code source, sa complexité temporelle, ainsi qu'une explication détaillée de son fonctionnement.
-
 ### 1. Tri par sélection (Selection Sort)
 ```c
 void sort(int *tab, int N)
