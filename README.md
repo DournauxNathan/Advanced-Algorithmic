@@ -13,7 +13,6 @@ Ce repository contient une collection d'algorithmes de base en langage C, couvra
   - [Tri Rapide](#tri-rapide)
   - [Tri par Tas](#tri-par-tas)
 - [Application de la Pile : Calculette](#application-de-la-pile-calculette)
-- [Licence](#licence)
 
 ## Introduction
 Ce repository est destiné à servir de référence et d'exemple pour différents algorithmes et structures de données couramment utilisés en programmation. Il couvre des structures telles que la pile, la file, ainsi que des algorithmes de tri comme le tri fusion, tri rapide et tri par tas.
