@@ -155,7 +155,7 @@ Cell randomInsert(Cell c, int pos, int value) {
         n->next = c;
         return n;
     }
-    c->next = insert(c->next, pos - 1, value);
+    c->next = randomInsert(c->next, pos - 1, value);
     return c;
 }
 ```
@@ -164,8 +164,7 @@ Cell randomInsert(Cell c, int pos, int value) {
 * **Entrée** : `c` : Liste existante, `pos` : Position cible, `value` : Valeur à insérer.
 * **Sortie** : Tête de la liste modifiée.
 * **Complexité temporelle** : O(n)
-* **Description** : Si `pos == 0`, on insère en tête. Sinon, on insère récursivement dans la suite de la liste jusqu'à atteindre la bonne position. ⚠️ La fonction `insert()` doit être définie ailleurs.
-
+* **Description** : Si `pos == 0`, on insère en tête. Sinon, on insère récursivement dans la suite de la liste jusqu'à atteindre la bonne position.
 ---
 
 ### Résumé
