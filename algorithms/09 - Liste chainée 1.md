@@ -180,5 +180,3 @@ Cell randomInsert(Cell c, int pos, int value) {
 | `randomInsert` | Insertion à une position donnée | O(n)       |
 
 Cette implémentation de **liste chaînée simple** permet une gestion flexible de données, très utile pour les piles, files, ou tout système nécessitant une collection dynamique.
-
-```
