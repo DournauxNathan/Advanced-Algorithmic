@@ -8,47 +8,108 @@ Ce repository contient une collection d'algorithmes de base en langage C, couvra
 - [Structures de données](#structures-de-données)
   - [Pile](#pile)
   - [File](#file)
+  - [Listes chaînées](#listes-chaînées)
 - [Algorithmes de tri](#algorithmes-de-tri)
   - [Tri Fusion](#tri-fusion)
   - [Tri Rapide](#tri-rapide)
   - [Tri par Tas](#tri-par-tas)
-- [Application de la Pile : Calculette](#application-de-la-pile-calculette)
+- [Applications](#applications)
+  - [Calculette (Pile)](#application-de-la-pile-calculette)
+  - [Listes triées et manipulation](#listes-triées-et-manipulation)
+- [Arbres](#arbres)
+  - [Arbres Binaires](#arbres-binaires)
+  - [Parcours d’Arbres](#parcours-darbres)
+  - [Arbres Binaires de Recherche (BST)](#arbres-binaires-de-recherche-bst)
+  - [Arbres AVL](#arbres-avl)
+  - [Arbres Préfixes (Trie)](#arbres-préfixes-trie)
 
 ## Introduction
-Ce repository est destiné à servir de référence et d'exemple pour différents algorithmes et structures de données couramment utilisés en programmation. Il couvre des structures telles que la pile, la file, ainsi que des algorithmes de tri comme le tri fusion, tri rapide et tri par tas.
+Ce repository est destiné à servir de référence et d'exemple pour différents algorithmes et structures de données couramment utilisés en programmation.
 
 ## Structures de données
 
 ### Pile
-Une **pile** est une structure de données de type LIFO (Last In, First Out), où le dernier élément ajouté est le premier à être retiré. Les opérations principales incluent l'insertion (empilement), le retrait (dépilement), et la vérification de l'état de la pile.
+*Structure de type LIFO (Last In First Out)*
 
-#### Fonctionnalités :
-- Vérifier si la pile est vide
-- Vérifier si la pile est pleine
-- Empiler un élément
-- Dépiler un élément
-- Afficher les éléments de la pile
+Fonctionnalités :
+- Vérification pile vide / pleine
+- Empilement / dépilement
+- Affichage
 
 ### File
-Une **file** est une structure de données de type FIFO (First In, First Out), où le premier élément ajouté est le premier à être retiré. Les opérations de base incluent l'enfiler (ajout à la fin) et défiler (retrait du début).
+*Structure de type FIFO (First In First Out)*
 
-#### Fonctionnalités :
-- Vérifier si la file est vide
-- Vérifier si la file est pleine
-- Enfiler un élément
-- Défiler un élément
-- Afficher les éléments de la file
+Fonctionnalités :
+- Vérification file vide / pleine
+- Enfilement / défilement
+- Affichage
+
+### Listes chaînées
+Les listes chaînées permettent une gestion dynamique de mémoire et une insertion efficace.
+
+Fonctionnalités :
+- Insertion / suppression en tête ou en fin
+- Recherche par valeur
+- Affichage
+- Fusion de listes
+- Inversion de liste
+- Détection de doublons
+- Tests de circularité et de palindromes
 
 ## Algorithmes de tri
 
 ### Tri Fusion
-Le **tri fusion** (Merge Sort) est un algorithme de tri basé sur la technique du "diviser pour régner". Il divise récursivement le tableau en sous-tableaux plus petits, trie chacun d'eux et les fusionne dans un tableau trié.
+Tri récursif basé sur la division du tableau puis fusion.
 
 ### Tri Rapide
-Le **tri rapide** (Quick Sort) est un algorithme de tri qui choisit un pivot pour partitionner le tableau et trie récursivement les deux sous-parties.
+Tri récursif basé sur un pivot et une partition.
 
 ### Tri par Tas
-Le **tri par tas** (Heap Sort) trie les éléments en construisant un tas à partir du tableau et en extrayant l'élément maximal ou minimal pour les ajouter dans le tableau trié.
+Tri basé sur une structure de tas binaire max ou min.
 
-## Application de la Pile : Calculette
-Une **calculette** est implémentée en utilisant une pile pour évaluer des expressions arithmétiques simples (addition, soustraction, multiplication). Elle parcourt la chaîne de caractères représentant l'expression et applique les opérations sur les éléments empilés.
+## Applications
+
+### Application de la Pile : Calculette
+Évaluation d'expressions arithmétiques postfixées via une pile.
+
+### Listes triées et manipulation
+Utilisation des listes pour stocker des valeurs triées, avec opérations d’insertion ordonnée, suppression et fusion.
+
+## Arbres
+
+### Arbres Binaires
+Implémentation d’un arbre binaire avec :
+- Calcul de la taille (`treeSize`)
+- Calcul de la hauteur (`treeHeight`)
+- Nombre de feuilles (`leafsCount`)
+- Vérification d’arbre complet (`isFull`)
+- Inversion d’arbre (`reverseTree`)
+
+### Parcours d’Arbres
+- Parcours préfixé (préordre)
+- Parcours infixé (inordre)
+- Parcours postfixé
+- Parcours en largeur (BFS)
+- Versions itératives avec pile ou file
+
+### Arbres Binaires de Recherche (BST)
+Arbres binaires avec propriété de tri :
+- Recherche (`contains`)
+- Insertion (`insert`)
+- Suppression (`remove`)
+- Recherche de valeur maximale (`getMaxNode`)
+
+### Arbres AVL
+Arbres binaires de recherche auto-équilibrés :
+- Calcul du déséquilibre (`getBalance`)
+- Rotations gauche / droite
+- Insertion et suppression équilibrées (`insert`, `remove`)
+- Mise à jour de la hauteur
+
+### Arbres Préfixes (Trie)
+Arbres spécialisés pour représenter des ensembles de mots :
+- Insertion de mot (`insert`)
+- Recherche d’un mot (`contains`)
+- Affichage de tous les mots (`display`)
+- Comptage de mots (`wordCount`)
+- Taille de l’arbre (`treeSize`)
